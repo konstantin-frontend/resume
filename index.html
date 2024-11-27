@@ -6,73 +6,91 @@
     <meta name="description" content="Это сайт - резюме Тетерина Константина">
     <meta name="keywords" content="Константин, cv, resume">
     <title>Константин Резюме</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="img/ava.jpg" alt="Фото профиля" width="150px">
-    
-    <h1>Константин</h1>
-    
-    <p><strong>Восстанавливаю</strong> знания по <em>html/css</em></p>
-    
-    <a href="https://t.me/KaKTyCuK" target="_blank">Telegram</a>
-    
+  
+<div class="container">
+  <div class="info">
+    <img src="img/ava.jpg" alt="Фото профиля">
+    <div class="info-text">
+      <h1>Константин Тетерин</h1>
+      
+      <p><strong>Восстанавливаю</strong> знания по <em>html/css</em></p>
+      
+      <a href="https://t.me/KaKTyCuK" target="_blank">Напишите мне в Telegram</a>
+    </div>
+  </div>
+  
+  <div class="card hobby">
     <h2>Мои увлечения</h2>
     
     <ul>
-        <li>Путешествия</li>
-        <li>Встречи с друзьями на свежем воздухе</li>
-        <li>Немного компьютерных игр</li>
+      <li>Путешествия</li>
+      <li>Встречи с друзьями на свежем воздухе</li>
+      <li>Немного компьютерных игр</li>
     </ul>
+  </div>
 
+  <div class="card job">
     <h2>Опыт работы</h2>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Название организации</th>
-                <th>Должность</th>
-                <th>Годы</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Яндекс Такси</td>
-                <td>Водитель</td>
-                <td>2022 - по настоящее время</td>
-            </tr>
-            <tr>
-                <td>Фриланс</td>
-                <td>Наполнение интернет магазина, немного верстки для сайта друзей</td>
-                <td>2018-2022</td>
-            </tr>
-            <tr>
-                <td>ДНС</td>
-                <td>Продавец-консультант</td>
-                <td>2017-2018</td>
-            </tr>
-        </tbody>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Название организации</th>
+          <th>Должность</th>
+          <th>Годы</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Яндекс Такси</td>
+          <td>Водитель</td>
+          <td>2022 - по н.в.</td>
+        </tr>
+        <tr>
+          <td>Фриланс</td>
+          <td>Наполнение интернет магазина, немного верстки для сайта друзей</td>
+          <td>2018-2022</td>
+        </tr>
+        <tr>
+          <td>ДНС</td>
+          <td>Продавец-консультант</td>
+          <td>2017-2018</td>
+        </tr>
+      </tbody>
     </table>
+  </div>
 
+  <div class="card feedback">
     <h2>Связаться со мной</h2>
     
     <form action="/">
-        <div>
-            <label for="name">Ваше имя</label>
-            <input type="text" id="name" placeholder="Введите имя">
+
+      <div class="feedback-row">
+        <div class="feedback-group">
+          <label for="name">Ваше имя</label>
+          <input type="text" id="name" placeholder="Введите имя">
         </div>
 
-        <div>
-            <label for="email">Ваш email</label>
-            <input type="email" id="email" placeholder="Введите email">
+        <div class="feedback-group">
+          <label for="email">Ваш email</label>
+          <input type="email" id="email" placeholder="Введите email">
         </div>
+      </div>
 
-        <div>
-            <label for="message">Ваше сообщение</label>
-            <br>
-            <textarea id="message" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
-        </div>
+      <div class="feedback-group">
+        <label for="message">Ваше сообщение</label>
+        <textarea id="message" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
+      </div>
 
-        <input type="submit" value="Отправить!">
+      <input type="submit" value="Отправить!" class="btn">
     </form>
+  </div>
+</div>
+
+
+
 </body>
 </html>

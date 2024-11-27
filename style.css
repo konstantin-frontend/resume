@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #0f141e;
+  background-color: #fafafa;
+  margin: auto;
+}
+
+ul, ol {
+  padding-left: 20px;
+}
+a, a:active, a:visited {
+  text-decoration: none;
+  color: #6e6eff;
+}
+a:hover {
+  color:#3939a7;
+}
+h1, h2, h3, h4 {
+  margin-bottom: 20px;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+.info {
+  padding: 20px 0;
+  display: flex;
+}
+.info img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+  margin-right: 20px;
+}
+.info p {
+  margin-bottom: 20px;
+}
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.hobby {
+  background-color: #e4e8ff;
+}
+
+.job {
+  background-color: #ede4ff;
+}
+
+.feedback {
+  background-color: #fee3ec;
+}
+
+.btn {
+  padding: 15px;
+  border: none;
+  background-color: #6e6eff;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #3939a7;
+}
+.table {
+  width: 100%;
+}
+.table thead tr {
+  background-color: #d2c9e3;
+}
+.table th {
+  text-align: left;
+  padding: 5px;
+}
+.table td {
+  vertical-align: top;
+  padding: 5px;
+}
+
+.feedback h2 {
+  padding-left: 10px;
+}
+
+.feedback-group {
+  display: block;
+}
+
+.feedback-group label {
+  display: block;
+  padding-left: 10px;
+}
+
+.feedback-group input, 
+.feedback-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+  padding: 10px;
+  font-family: inherit;
+}
+
+.feedback-row {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.feedback-row .feedback-group {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.feedback-row .feedback-group:last-child {
+  margin-right: 0;
+}
+
+.feedback .btn {
+  margin-left: 10px;
+}
+
+@media (max-width: 650px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+  .info img {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .feedback-row {
+    display: block;
+  }
+  .feedback-row .feedback-group {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
